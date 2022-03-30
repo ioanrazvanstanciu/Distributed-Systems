@@ -1,0 +1,20 @@
+Stanciu Ioan-Razvan
+335CC
+
+--- TEMA 3 APD ---
+
+	In cadrul acestei teme am inceput sa citesc in fiecare proces parinte
+fisierul lui, dupa care procesul 0 a trimis la procesul 1 vectorul lui, iar
+acesta a alipit cei 2 vectori, dupa care a trimis acest vector partial la
+procesul 2 care a alipit iar acest vector cu vectorul lui si a trimis
+raspunsul final la clusterul 0 care l-a copiat si l-a trimis la clusterul
+1 care si-a facut si el topologia. Toate aceste 3 rankuri dupa ce au aflat
+topologia finala au afisat-o si au trimis-o la vectorii de workeri, care au
+luat-o si au afisat-o.
+	Dupa ce s-a aflat topologia, clusterul 0 a generat vectorul si l-a trimis
+la clusterele 1 si 2. Toate clusterele au impartit workloadul conform
+formulelor din laburi si le-au pasat mai departe la workeri in functie de
+rank. Workerii au calculat partile lor din vectori si le-au trimis la
+parinti. Parintii le-au luat si le-au alipit la vectorii lor, iar clusterele 1
+si 2 si-au trimis partile catre clusterul 0 care le-a asamblat si afisat.
+	Mentionez ca nu am realizat si cerinta bonus.
